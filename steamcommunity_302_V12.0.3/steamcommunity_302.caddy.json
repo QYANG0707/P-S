@@ -1,0 +1,185 @@
+{
+admin off
+auto_https disable_redirects
+}
+
+https://steamcommunity.com:4270, www.steamcommunity.com:4270 {
+    tls steamcommunity.crt steamcommunity.key
+    @steamcommunityrp {
+    path /comment/*
+    path /forum/*
+    path *discussions*
+    }
+    reverse_proxy @steamcommunityrp https://str001.steam302.xyz https://str002.steam302.xyz https://str003.steam302.xyz {
+    header_up Host steamcommunity.com
+			transport http {
+			tls
+			tls_server_name statuspage.akamaized.net
+			#tls_insecure_skip_verify
+		}
+    }
+    reverse_proxy https://steamuserimages-a.akamaihd.net https://steamstore-a.akamaihd.net https://steamcommunity-a.akamaihd.net https://eaassets-a.akamaihd.net https://humblebundle-a.akamaihd.net https://steamcommunity-a.akamaihd.net {
+	header_up Host steamcommunity.com
+		transport http {
+			tls
+			#tls_insecure_skip_verify
+		}
+    }
+}
+https://gist.github.com:4270 {
+tls steamcommunity.crt steamcommunity.key
+
+    reverse_proxy https://ghgist.steam302.xyz {
+    lb_policy random
+    transport http {
+    tls
+    tls_insecure_skip_verify
+    }
+    header_up Host {host}
+    }
+}
+
+https://api.github.com:4270 {
+tls steamcommunity.crt steamcommunity.key
+
+    reverse_proxy https://ghapi.steam302.xyz {
+    lb_policy random
+    transport http {
+    tls
+    tls_insecure_skip_verify
+    }
+    header_up Host {host}
+    }
+}
+
+https://github.com:4270 https://www.github.com:4270 {
+tls steamcommunity.crt steamcommunity.key
+
+    reverse_proxy https://gh.steam302.xyz {
+    lb_policy random
+    transport http {
+    tls
+    tls_insecure_skip_verify
+    }
+    header_up Host {host}
+    }
+}
+
+https://raw.githubusercontent.com:4270 https://raw.github.com:4270 https://camo.githubusercontent.com:4270 https://cloud.githubusercontent.com:4270 https://avatars.githubusercontent.com:4270 https://avatars0.githubusercontent.com:4270 https://avatars1.githubusercontent.com:4270 https://avatars2.githubusercontent.com:4270 https://avatars3.githubusercontent.com:4270 https://user-images.githubusercontent.com:4270 https://github-releases.githubusercontent.com:4270 {
+tls steamcommunity.crt steamcommunity.key
+
+    reverse_proxy https://ghraw.steam302.xyz {
+    lb_policy random
+    transport http {
+    tls
+    tls_insecure_skip_verify
+    }
+    header_up Host {host}
+    }
+}
+
+https://assets-cdn.github.com:4270 {
+tls steamcommunity.crt steamcommunity.key
+
+    reverse_proxy https://ghassets.steam302.xyz {
+    lb_policy random
+    transport http {
+    tls
+    tls_insecure_skip_verify
+    }
+    header_up Host {host}
+    }
+}
+
+https://github.githubassets.com:4270 https://help.github.com:4270 https://docs.github.com:4270 {
+tls steamcommunity.crt steamcommunity.key
+
+    reverse_proxy https://gh154.steam302.xyz {
+    lb_policy random
+    transport http {
+    tls
+    tls_insecure_skip_verify
+    }
+    header_up Host {host}
+    }
+}
+
+https://codeload.github.com:4270 {
+tls steamcommunity.crt steamcommunity.key
+
+    reverse_proxy https://ghcload.steam302.xyz {
+    lb_policy random
+    transport http {
+    tls
+    tls_insecure_skip_verify
+    }
+    header_up Host {host}
+    }
+}
+
+
+https://*.github.io:4270 https://www.github.io:4270 https://github.io:4270 {
+tls steamcommunity.crt steamcommunity.key
+
+    reverse_proxy https://ghio.steam302.xyz {
+    lb_policy random
+    transport http {
+    tls
+    tls_insecure_skip_verify
+    }
+    header_up Host {host}
+    }
+}
+
+https://pages.github.com:4270 {
+tls steamcommunity.crt steamcommunity.key
+
+    reverse_proxy https://ghps.steam302.xyz {
+    lb_policy random
+    transport http {
+    tls
+    tls_insecure_skip_verify
+    }
+    header_up Host {host}
+    }
+}
+
+https://services.github.com:4270 https://resources.github.com:4270 https://developer.github.com:4270 https://partner.github.com:4270 https://desktop.github.com:4270 https://guides.github.com:4270 {
+tls steamcommunity.crt steamcommunity.key
+
+    reverse_proxy https://ghps.steam302.xyz {
+    lb_policy random
+    transport http {
+    tls
+    tls_insecure_skip_verify
+    }
+    header_up Host {host}
+    }
+}
+
+https://support.github.com:4270 https://education.github.com:4270 https://enterprise.github.com:4270 https://lab.github.com:4270 https://classroom.github.com:4270 https://central.github.com:4270 {
+tls steamcommunity.crt steamcommunity.key
+
+    reverse_proxy https://gh140.steam302.xyz {
+    lb_policy random
+    transport http {
+    tls
+    tls_insecure_skip_verify
+    }
+    header_up Host {host}
+    }
+}
+
+https://desktop.githubusercontent.com:4270 {
+tls steamcommunity.crt steamcommunity.key
+
+    reverse_proxy https://ghdesk.steam302.xyz {
+    lb_policy random
+    transport http {
+    tls
+    tls_insecure_skip_verify
+    }
+    header_up Host {host}
+    }
+}
+
