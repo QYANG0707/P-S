@@ -2,9 +2,9 @@ import nester
 from nester import split_line
 
 cast = ['Palin', 'Cleese', 'Idle', 'Jones', 'Gilliam', 'Chapman']
-nester.is_list(cast, 0)
+nester.print_lol(cast, 0)
 
-split_line(20, '')
+split_line()
 movies = [
     'The Holy Grail', 1975, 'Terry Jones & Terry Gilliam', 91,
     [
@@ -16,4 +16,4 @@ movies = [
     ]
 ]
 
-nester.is_list(movies, True, 0)
+nester.print_lol(movies, True, 0)

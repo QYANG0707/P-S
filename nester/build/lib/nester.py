@@ -13,5 +13,5 @@ def print_lol(the_list, indent=False, level=0, fn=sys.stdout):
             print(each_item, file=fn)
 
 
-def split_line(num=20, msg=''):
+def split_line(msg='',num=20):
     print('-' * int(num / 2) + msg + '-' * int(num / 2))

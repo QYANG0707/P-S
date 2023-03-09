@@ -28,7 +28,7 @@ sarah = get_coach_data('sarah.txt')
 #     data = saf.readline()
 #     sarah = data.strip().split(',')
 
-split_line(20, '输出所有时间')
+split_line('输出所有时间')
 print(james)
 print(julie)
 print(mikey)
@@ -46,7 +46,7 @@ def sanitize(time_string):
     return (mins + '.' + secs)
 
 
-split_line(20, '输出排序时间')
+split_line('输出排序时间')
 print(sorted(set([sanitize(t) for t in james]))[0:3])
 print(sorted(set([sanitize(t) for t in julie]))[0:3])
 print(sorted(set([sanitize(t) for t in mikey]))[0:3])

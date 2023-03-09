@@ -38,7 +38,7 @@ finally:
     data.close()
 
 #
-split_line(20, '尝试打开不存在文件')
+split_line('尝试打开不存在文件')
 try:
     data = open('missing.txt')
     print(data.readline())
@@ -49,7 +49,7 @@ finally:
         data.close()
 
 #使用with不必关心关闭打开的文件
-split_line(20, '使用with处理文件')
+split_line('使用with处理文件')
 try:
     with open('man_data.txt', 'w') as man_file:
         print_lol(man, fn=man_file)
@@ -59,7 +59,7 @@ except IOError as err:
     print('File Error:' + str(err))
 
 #
-split_line(20, '腌制数据')
+split_line('腌制数据')
 try:
     with open('man_data.txt', 'wb') as man_file:
         pickle.dump(man, man_file)

@@ -43,5 +43,5 @@ for each_line in data:
     except ValueError:
         print("exception:ValueError")
 print(end='\n')
-split_line(20, 'try except')
+split_line('try except')
 data.close()

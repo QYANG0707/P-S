@@ -61,7 +61,7 @@ ShowToolbar = true
 ShowFavorites = false
 ShowToc = true
 TocDy = 0
-SidebarDx = 0
+SidebarDx = 216
 ToolbarSize = 18
 TabWidth = 300
 TreeFontSize = 0
@@ -69,27 +69,47 @@ SmoothScroll = false
 ShowStartPage = true
 CheckForUpdates = true
 WindowState = 1
-WindowPos = 0 0 800 860
+WindowPos = 0 0 675 860
 UseTabs = true
 UseSysColors = false
 CustomScreenDPI = 0
 
 FileStates [
 	[
-		FilePath = C:\Users\Administrator.BF-20210630DZAX\Desktop\python\learning\Head First Python（中文版）.pdf
+		FilePath = D:\python资料\第一部分\《Python编程：从入门到实践》中文版+源代码\Python编程：从入门到实践.pdf
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 5
+		OpenCount = 3
 		UseDefaultState = false
 		DisplayMode = continuous
-		ScrollPos = -1 501.322
-		PageNo = 216
+		ScrollPos = -1 217.852
+		PageNo = 256
 		Zoom = fit width
 		Rotation = 0
 		WindowState = 1
-		WindowPos = 0 0 800 860
+		WindowPos = 0 0 675 860
+		ShowToc = false
+		SidebarDx = 216
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Administrator.BF-20210630DZAX\Desktop\scratch-game\learning\Head First Python（中文版）.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 433
+		Zoom = fit width
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 0 0 882 860
 		ShowToc = false
 		SidebarDx = 0
 		DisplayR2L = false
@@ -99,6 +119,6 @@ FileStates [
 SessionData [
 ]
 TimeOfLastUpdateCheck = 0 0
-OpenCountWeek = 634
+OpenCountWeek = 635
 
 # Settings below are not recognized by the current version
